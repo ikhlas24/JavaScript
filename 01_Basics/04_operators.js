@@ -1,4 +1,6 @@
-// --------------Arthematic operatiors--------------
+// --------------------------------------------------
+// --------------Arthematic operatiors---------------
+// --------------------------------------------------
 
 // 1. NEGATION OPERATOR (-)
 let val = 3;
@@ -56,8 +58,9 @@ let value2 = 5;
 console.log(value2++); // 5
 console.log(value2);   // 6
 
-
-// -------------- Comparison Operators -------------------------------------
+// --------------------------------------------------
+// -------------- Comparison Operators --------------
+// --------------------------------------------------
 
 // 1. GREATER THAN (>)
 console.log(1 > 0); // true
@@ -73,3 +76,62 @@ console.log(1 == 0); // false
 // 6. NOT EQUAL TO (!=)
 // Checks whether two values are different.
 console.log(1 != 0); // true
+
+// 1. STRING → NUMBER
+// "2" is converted to the number 2.
+// 2 > 1 → true
+
+console.log("2" > 1); // true
+
+// 2. STRING → NUMBER
+// "02" is converted to the number 2.
+// 2 > 1 → true
+
+console.log("02" > 1); // true
+
+// 3. NULL → NUMBER
+// For the > comparison, null is converted to 0.
+// 0 > 0 → false
+
+console.log(null > 0); // false
+
+// 4. NULL → NUMBER
+// == has a special rule for null.
+// null is only loosely equal to null or undefined.
+// null == 0 → false
+
+console.log(null == 0); // false
+// == with null
+// null == undefined  // true
+// null == 0          // false
+// null == ""         // false
+// null == false      // false
+
+// Relational comparison
+// null >= 0          // true → null becomes 0
+// null > 0           // false → null becomes 0
+
+// 5. NULL → NUMBER
+// For >=, null is converted to 0.
+// 0 >= 0 → true
+
+console.log(null >= 0); // true
+
+// --------------------------------------------------
+
+// 1. LOOSE EQUALITY (==)
+// Compares only the value.
+// JavaScript converts the types if necessary.
+// "1" → 1, so both values are equal.
+
+console.log("1" == 1); // true
+
+
+// 2. STRICT EQUALITY (===)
+// Compares both the value AND the data type.
+// "1" is a String and 1 is a Number.
+// Different types → false.
+
+console.log("1" === 1); // false
+
+// --------------------------------------------------
