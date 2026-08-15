@@ -1,5 +1,7 @@
 "use strict"; // treat all JS code as newer version
 
+const Newvar = "New";
+
 // ============================================================
 // PRIMITIVE DATA TYPES
 // ============================================================
